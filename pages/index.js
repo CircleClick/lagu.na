@@ -4,6 +4,18 @@ import Layout from '../util/layout';
 
 export default class Home extends Component {
 	render() {
+
+		return (<div style={{
+			background: 'url(/img/bg.jpg)',
+			backgroundSize: 'cover',
+			backgroundPosition: 'center',
+			width: '100vw',
+			height: '100vh',
+		}}>
+
+		</div>)
+
+		/*
 		let { title, cats } = attributes;
 		return (
 			<Layout>
@@ -18,6 +30,6 @@ export default class Home extends Component {
 					)) : null}
 				</ul>
 			</Layout>
-		)
+		)*/
 	}
 }
