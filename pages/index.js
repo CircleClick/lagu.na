@@ -1,13 +1,12 @@
 import Head from 'next/head';
-import { Component } from 'react'
+import { css } from '@emotion/react';
+
+/*
 import { attributes, react as HomeContent } from '../content/home.md';
-import Layout from '../util/layout';
+import Layout from '../util/layout';*/
 
 export default function Home() {
 	return (<div style={{
-		background: 'url(/img/bg.jpg)',
-		backgroundSize: 'cover',
-		backgroundPosition: 'center',
 		width: '100vw',
 		height: '100vh',
 	}}>
@@ -17,6 +16,20 @@ export default function Home() {
 			<meta name='twitter:card' content='summary_large_image' />
 			<meta name='twitter:image' content='/img/bg.jpg' />
 		</Head>
+		<picture css={css`
+			width: 100%;
+			height: 100%;
+			
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		`}>
+			<source src="img/bg.avif" type="image/avif" />
+			<source src="img/bg.webp" type="image/webp" />
+			<img src="/img/bg.jpg" />
+		</picture>
 	</div>)
 
 	/*
