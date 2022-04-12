@@ -1,11 +1,12 @@
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md';
+import Layout from '../util/layout';
 
 export default class Home extends Component {
 	render() {
 		let { title, cats } = attributes;
 		return (
-			<article>
+			<Layout>
 				<h1>{title}</h1>
 				<HomeContent />
 				<ul>
@@ -16,7 +17,7 @@ export default class Home extends Component {
 						</li>
 					)) : null}
 				</ul>
-			</article>
+			</Layout>
 		)
 	}
 }
