@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "IBMPlexSans";
+	font-weight: 800;
+	src: url("/fonts/OBMPlexSans-Bold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "IBMPlexSans";
+	font-weight: 600;
+	src: url("/fonts/OBMPlexSans-Regular.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 800;
+	src: url("/fonts/Inter-Bold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Inter";
+	font-weight: 600;
+	src: url("/fonts/Inter-Regular.ttf") format("ttf");
+}
+
+body {
+	font-family: "Inter", sans-serif;
+}
