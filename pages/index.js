@@ -16,19 +16,10 @@ export default function Home() {
 			<meta name='twitter:card' content='summary_large_image' />
 			<meta name='twitter:image' content='/img/bg.jpg' />
 		</Head>
-		<picture css={css`
-			width: 100%;
-			height: 100%;
-			
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-		`}>
+		<picture className='inset-0 absolute w-full h-full'>
 			<source src="img/bg.avif" type="image/avif" />
 			<source src="img/bg.webp" type="image/webp" />
-			<img src="/img/bg.jpg" alt="Laguna" />
+			<img src="/img/bg.jpg" alt="Laguna" className='inset-0 absolute w-full h-full object-cover' />
 		</picture>
 	</div>)
 
