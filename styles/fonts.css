@@ -1,25 +1,25 @@
 @font-face {
 	font-family: "IBMPlexSans";
 	font-weight: 800;
-	src: url("/fonts/OBMPlexSans-Bold.ttf") format("ttf");
+	src: url("/fonts/OBMPlexSans-Bold.woff2") format("woff2"), url("/fonts/OBMPlexSans-Bold.ttf") format("ttf");
 }
 
 @font-face {
 	font-family: "IBMPlexSans";
 	font-weight: 600;
-	src: url("/fonts/OBMPlexSans-Regular.ttf") format("ttf");
+	src: url("/fonts/OBMPlexSans-Regular.woff2") format("woff2"), url("/fonts/OBMPlexSans-Regular.ttf") format("ttf");
 }
 
 @font-face {
 	font-family: "Inter";
 	font-weight: 800;
-	src: url("/fonts/Inter-Bold.ttf") format("ttf");
+	src: url("/fonts/Inter-Bold.woff2") format("woff2"), url("/fonts/Inter-Bold.ttf") format("ttf");
 }
 
 @font-face {
 	font-family: "Inter";
 	font-weight: 600;
-	src: url("/fonts/Inter-Regular.ttf") format("ttf");
+	src: url("/fonts/Inter-Regular.woff2") format("woff2"), url("/fonts/Inter-Regular.ttf") format("ttf");
 }
 
 body {
