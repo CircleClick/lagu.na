@@ -28,7 +28,7 @@ export default function Home() {
 		`}>
 			<source src="img/bg.avif" type="image/avif" />
 			<source src="img/bg.webp" type="image/webp" />
-			<img src="/img/bg.jpg" />
+			<img src="/img/bg.jpg" alt="Laguna" />
 		</picture>
 	</div>)
 
