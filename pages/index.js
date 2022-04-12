@@ -15,6 +15,9 @@ export default class Home extends Component {
 		}}>
 			<Head>
 				<title>Laguna</title>
+				<meta property="og:image" content="/img/bg.jpg" />
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta name='twitter:image' content='/img/bg.jpg' />
 			</Head>
 
 		</div>)
