@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Component } from 'react'
 import { attributes, react as HomeContent } from '../content/home.md';
 import Layout from '../util/layout';
@@ -12,6 +13,9 @@ export default class Home extends Component {
 			width: '100vw',
 			height: '100vh',
 		}}>
+			<Head>
+				<title>Laguna</title>
+			</Head>
 
 		</div>)
 
