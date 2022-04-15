@@ -6,10 +6,11 @@ import { attributes, react as HomeContent } from '../content/home.md';
 import Layout from '../util/layout';*/
 
 export default function Home() {
-	return (<div style={{
-		width: '100vw',
-		height: '100vh',
-	}}>
+	return (<div css={css`
+		width: '100vw';
+		height: '100vh';
+		background: #E7E7E7;
+	`}>
 		<Head>
 			<title>Laguna</title>
 			<meta property="og:image" content="/img/bg.jpg" />
@@ -17,12 +18,15 @@ export default function Home() {
 			<meta name='twitter:image' content='/img/bg.jpg' />
 		</Head>
 		<video autoPlay muted css={css`
-			width: 100%;
-			height: 100%;
+			width: 100vw;
+			height: 100vh;
+			position: absolute;
+			top: 0;
+			left: 0;
 			object-fit: cover;
+			background: #E7E7E7;
 			@media (max-aspect-ratio: 1/1) {
 				object-fit: contain;
-				background-color: #EDEDED;
 			}
 		`}>
 			<source src="/img/laguna.webm" type="video/webm" />
