@@ -27,6 +27,7 @@ export default function Home() {
 			background: #E7E7E7;
 			@media (max-aspect-ratio: 1/1) {
 				object-fit: contain;
+				object-position: center;
 			}
 		`}>
 			<source src="/img/laguna.webm" type="video/webm" />
