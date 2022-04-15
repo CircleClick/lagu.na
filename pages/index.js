@@ -16,11 +16,18 @@ export default function Home() {
 			<meta name='twitter:card' content='summary_large_image' />
 			<meta name='twitter:image' content='/img/bg.jpg' />
 		</Head>
-		<picture className='inset-0 absolute w-full h-full'>
-			<source src="img/bg.avif" type="image/avif" />
-			<source src="img/bg.webp" type="image/webp" />
-			<img src="/img/bg.jpg" alt="Laguna" className='inset-0 absolute w-full h-full object-cover' />
-		</picture>
+		<video autoPlay muted css={css`
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			@media (max-aspect-ratio: 1/1) {
+				object-fit: contain;
+				background-color: #EDEDED;
+			}
+		`}>
+			<source src="/img/laguna.webm" type="video/webm" />
+			<source src="/img/laguna.mp4" type="video/mp4" />
+		</video>
 	</div>)
 
 	/*
